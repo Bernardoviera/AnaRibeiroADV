@@ -202,54 +202,85 @@ h1, h2, h3 {
   position: relative;
   width: 300px;
   aspect-ratio: 15.2 / 22.8;
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: var(--shadow);
   overflow: hidden;
-  background: var(--color-purple-dark);
+  background: var(--color-cream-alt);
 }
 .book-mock img { width: 100%; height: 100%; object-fit: cover; }
 .book-mock-fallback {
   display: none;
   position: absolute;
   inset: 0;
-  padding: 32px 24px;
+  padding: 34px 26px 28px;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background:
-    linear-gradient(180deg, rgba(42,37,96,0.15), rgba(42,37,96,0.55)),
-    linear-gradient(135deg, var(--color-purple) 0%, var(--color-purple-dark) 100%);
-  color: var(--color-white);
+  background: linear-gradient(180deg, #FBF8F2 0%, #F1EADA 100%);
+  color: var(--color-ink);
+  border: 1px solid rgba(34,30,59,0.08);
 }
 .book-mock--fallback img { display: none; }
 .book-mock--fallback .book-mock-fallback { display: flex; }
-.bm-kicker { letter-spacing: 0.2em; font-size: 0.85rem; margin-top: 24px; }
+.bm-kicker {
+  letter-spacing: 0.22em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
 .bm-title {
   font-family: var(--font-serif);
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 1;
-  margin-top: 6px;
+  margin-top: 4px;
+  color: var(--color-ink);
 }
 .bm-sub {
   font-family: var(--font-serif);
-  font-size: 1rem;
-  letter-spacing: 0.08em;
-  margin-top: 8px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid var(--color-gold-light);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-top: 6px;
+}
+.bm-ornament {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  color: var(--color-gold);
+}
+.bm-ornament::before,
+.bm-ornament::after {
+  content: "";
+  width: 32px;
+  height: 1px;
+  background: var(--color-gold);
 }
 .bm-desc {
-  font-size: 0.8rem;
-  margin-top: 20px;
-  color: rgba(255,255,255,0.85);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  margin-top: 16px;
+  color: var(--color-ink-soft);
+  max-width: 210px;
 }
-.bm-author {
+.bm-scene {
   margin-top: auto;
-  padding-top: 24px;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-  font-size: 0.85rem;
+  width: 100%;
+  height: 78px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0.85;
+}
+.bm-scene svg { height: 100%; }
+.bm-author {
+  padding-top: 14px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--color-ink);
 }
 
 /* Stats band */
