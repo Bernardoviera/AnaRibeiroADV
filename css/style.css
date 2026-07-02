@@ -229,9 +229,9 @@ h1, h2, h3 {
 .hero-media { display: flex; justify-content: center; }
 .book-mock {
   position: relative;
-  width: 340px;
-  aspect-ratio: 1 / 1;
-  border-radius: 10px;
+  width: 320px;
+  aspect-ratio: 2 / 3;
+  border-radius: 8px;
   box-shadow: var(--shadow);
   overflow: hidden;
   background: var(--color-cream-alt);
