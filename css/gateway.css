@@ -1,0 +1,54 @@
+.gateway {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-alt) 100%);
+}
+
+.gateway-card {
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: 40px 32px 36px;
+  box-shadow: var(--shadow);
+}
+
+.gateway-photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  box-shadow: 0 12px 24px -10px rgba(34, 30, 59, 0.35);
+}
+
+.gateway-eyebrow {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-purple-dark);
+  margin: 0 0 6px;
+}
+
+.gateway-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  margin: 0 0 10px;
+  font-family: var(--font-sans);
+  line-height: 1.4;
+}
+
+.gateway-sub {
+  font-size: 0.9rem;
+  color: var(--color-ink-soft);
+  margin: 0 0 28px;
+}
+
+.gateway-cta {
+  width: 100%;
+}
